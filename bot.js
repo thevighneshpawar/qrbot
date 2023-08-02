@@ -5,7 +5,7 @@ const bot = new TelegramBot(botToken, { polling: false });
 const qr = require('qr-image');
 const fs = require('fs');
 
-const webhookUrl = 'https://https://qrbot.vercel.app//api/webhook';
+const webhookUrl = 'https://qrbot.vercel.app//api/webhook';
 bot.setWebHook(webhookUrl);
 
 bot.onText(/\/start/, (msg) => {
